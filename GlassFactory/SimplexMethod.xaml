@@ -1,0 +1,35 @@
+﻿<Window x:Class="GlassFactory.SimplexMethod"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GlassFactory"
+        mc:Ignorable="d"
+        Title="Симплекс-метод" Height="472.4" Width="827.2" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock Text="Запасы сырья на складе (кг):" FontSize="15" FontWeight="Bold" Margin="10,10,592.8,406.4"/>
+        <TextBlock Text="Кварцевый песок:" FontSize="14" Margin="10,37,691.8,375.4"></TextBlock>
+        <TextBlock Text="Смесь:" FontSize="14" Margin="10,74,758.8,337.4"></TextBlock>
+        <TextBox x:Name="sandAmount" HorizontalAlignment="Left" Margin="134,34,0,376.4" Width="94"/>
+        <TextBox x:Name="mixAmount" HorizontalAlignment="Left" Height="32" Margin="67,73,0,0" VerticalAlignment="Top" Width="161"/>
+        <TextBlock Text="Затраты сырья на продукцию (кг):" FontSize="15" FontWeight="Bold" Margin="272,10,32.8,406.4"/>
+        <TextBlock Text="Стеклотара для напитков:" TextWrapping="Wrap" FontSize="14" Margin="272,41,339.8,375.4"></TextBlock>
+        <TextBox x:Name="x1SandValue" HorizontalAlignment="Left" Margin="486,41,0,368.4" Width="107"/>
+        <TextBlock TextWrapping="Wrap" FontSize="14" Margin="598,41,161.8,375.4"><Run Text="Банка"/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="x2SandValue" HorizontalAlignment="Left" Margin="664,41,0,368.4" Width="138"/>
+        <TextBlock FontSize="15" FontWeight="Bold" Margin="272,138,32.8,278.4"><Run Text="Стоимость продукции "/><Run Text="("/><Run Text="руб"/><Run Text="."/><Run Text="/"/><Run Text="шт."/><Run Text="):"/></TextBlock>
+        <TextBlock Text="Стеклотара для напитков:" TextWrapping="Wrap" FontSize="14" Margin="272,170,339.8,242.4"/>
+        <TextBox x:Name="x1Cost" HorizontalAlignment="Left" Margin="486,170,0,242.4" Width="107"/>
+        <TextBlock TextWrapping="Wrap" FontSize="14" Margin="598,170,161.8,242.4"><Run Text="Банка"/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="x2Cost" HorizontalAlignment="Left" Margin="664,170,0,242.4" Width="138"/>
+        <TextBox x:Name="x1MixValue" HorizontalAlignment="Left" Margin="486,79,0,330.4" Width="107"/>
+        <TextBox x:Name="x2MixValue" HorizontalAlignment="Left" Margin="664,79,0,330.4" Width="138"/>
+        <TextBlock Text="Прибыль:" TextWrapping="Wrap" FontSize="14" Margin="10,325,713.8,87.4"/>
+        <TextBox x:Name="profitValue" HorizontalAlignment="Left" Margin="112,325,0,87.4" Width="107" IsEnabled="False"/>
+        <TextBlock TextWrapping="Wrap" FontSize="14" Margin="10,360,621.8,52.4"><Run Text="Стеклотара для напитков"/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="x1Value" HorizontalAlignment="Left" Margin="204,360,0,52.4" Width="107" IsEnabled="False"/>
+        <TextBlock TextWrapping="Wrap" FontSize="14" Margin="10,395,745.8,17.4" Text="Банка:"/>
+        <TextBox x:Name="x2Value" HorizontalAlignment="Left" Margin="80,395,0,17.4" Width="107" IsEnabled="False"/>
+        <Button x:Name="calculateButton" Content="Рассчитать" HorizontalAlignment="Left" Margin="638,250,0,0" VerticalAlignment="Top" Width="164" Height="40" Click="calculateButton_Click"/>
+    </Grid>
+</Window>
